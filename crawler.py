@@ -41,7 +41,7 @@ class LinkProcessor:
         link = self.sanitizePageSectionInLink(link)
         # Convert internal relative link to absolute link
         if self.isInternalRelativeLink(link):
-            link = domain + link
+            link = self.domain + link
         # ----------------
         # Filter link
         # ----------------
